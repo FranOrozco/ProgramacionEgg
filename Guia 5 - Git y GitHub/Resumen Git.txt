@@ -1,0 +1,31 @@
+git init - Para inicializar un nuevo repositorio local
+ 
+git remote add <nombre> <url> - Para vincular nuestra carpeta (repositorio local) a la nube (repositorio remoto en GibHub)
+
+git status - Para verificar el estado de nuestro repositorio. Si la rama está actualizada o no. 
+
+GIT ADD
+Los cambios que hagamos en el local, no se mandan al commit. Para eso utilizaremos el comando git add:
+   git add <archivo> - Agregar un solo archivo 
+   git add . - Agregar todo de una vez
+
+GIT COMMIT
+Sirve para establecer un punto de control en el proceso de desarrollo al cual podes volver más tarde si es necesario. 
+También necesitamos escribir un mensaje corto para explicar qué hemos desarrollado o modificado en el código fuente.
+   git commit -m "mensaje de confirmación"
+
+Para enviar cambios al repositorio remoto, utilizamos: 
+	git push origin <nombreDeTuRama>
+Por defecto, la rama principal se llama <master> o <main>. 
+
+Línea de trabajo de Git:
+Add > Commit > Push > Repositorio Remoto 
+
+CLONAR REPOSITORIO
+	- Copiamos el url del repositorio que queremos clonar.
+	- Creamos una carpeta con el mismo nombre del repositorio o con uno con el que nos sintamos cómodos. 
+	- utilizamos el comando git clone <url> 
+
+
+
+

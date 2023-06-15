@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Guia10Ejercicio2">
+  <ClassDiagramComponents>
+    <Class name="Electrodomestico" package="entidades" visibility="public" xPosition="545.0" yPosition="13.0">
+      <Fields>
+        <Field name="precio" type="double" visibility="protected"/>
+        <Field name="color" type="String" visibility="protected"/>
+        <Field name="consumoEnergetico" type="String" visibility="protected"/>
+        <Field name="peso" type="double" visibility="protected"/>
+        <Field name="leer" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="consumoEnergetico"/>
+          <Argument type="double" name="peso"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getConsumoEnergetico" returnType="String" visibility="public"/>
+        <Method name="setConsumoEnergetico" returnType="void" visibility="public">
+          <Argument type="String" name="consumoEnergetico"/>
+        </Method>
+        <Method name="getPeso" returnType="double" visibility="public"/>
+        <Method name="setPeso" returnType="void" visibility="public">
+          <Argument type="double" name="peso"/>
+        </Method>
+        <Method name="comprobarConsumoEnergetico" returnType="void" visibility="public">
+          <Argument type="String" name="letra"/>
+        </Method>
+        <Method name="comprobarColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="crearElectrodomestico" returnType="void" visibility="public">
+          <Argument type="Electrodomestico" name="electro"/>
+        </Method>
+        <Method name="precioFinal" returnType="void" visibility="public">
+          <Argument type="Electrodomestico" name="electrodomestico"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Lavadora" package="entidades" visibility="public" xPosition="831.0" yPosition="596.0">
+      <Fields>
+        <Field name="carga" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="carga"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="consumoEnergetico"/>
+          <Argument type="double" name="peso"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCarga" returnType="int" visibility="public"/>
+        <Method name="setCarga" returnType="void" visibility="public">
+          <Argument type="int" name="carga"/>
+        </Method>
+        <Method name="crearLavadora" returnType="Lavadora" visibility="public"/>
+        <Method name="precioFinal" returnType="void" visibility="public">
+          <Argument type="Lavadora" name="lavadora"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Televisor" package="entidades" visibility="public" xPosition="-35.0" yPosition="509.0">
+      <Fields>
+        <Field name="pulgadas" type="Integer" visibility="private"/>
+        <Field name="TDT" type="Boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="pulgadas"/>
+          <Argument type="Boolean" name="TDT"/>
+          <Argument type="double" name="precio"/>
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="consumoEnergetico"/>
+          <Argument type="double" name="peso"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPulgadas" returnType="Integer" visibility="public"/>
+        <Method name="setPulgadas" returnType="void" visibility="public">
+          <Argument type="Integer" name="pulgadas"/>
+        </Method>
+        <Method name="getTDT" returnType="Boolean" visibility="public"/>
+        <Method name="setTDT" returnType="void" visibility="public">
+          <Argument type="Boolean" name="TDT"/>
+        </Method>
+        <Method name="crearTelevisor" returnType="Televisor" visibility="public"/>
+        <Method name="precioFinal" returnType="void" visibility="public">
+          <Argument type="Televisor" name="televisor"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="main" package="guia10ejercicio2" visibility="public" xPosition="1096.0" yPosition="89.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="entidades.Lavadora" target="entidades.Lavadora" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="entidades.Televisor" target="entidades.Electrodomestico"/>
+    <UseRelation source="entidades.Electrodomestico" target="entidades.Electrodomestico" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="entidades.Televisor" target="entidades.Televisor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="entidades.Lavadora" target="entidades.Electrodomestico"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

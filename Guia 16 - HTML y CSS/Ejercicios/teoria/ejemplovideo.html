@@ -1,0 +1,57 @@
+<!DOCTYPE html> <!-- Declaramos el tipo de documento. En este caso, doctype. -->
+<hmtl lang="es">
+    <!-- la etiqueta global que va a encerrar todo es la etiqueta html. Esta tiene etiqueta de apertura y de cierre. -->
+
+    <head> <!-- dentro de este bloque podemos distinguir dos bloques: la cabecera de nuestra página-->
+        <!-- podemos agregar información que es la que se va a comunicar entre el navegador y nuestro archivo -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intro HTML </title>
+    </head>
+
+    <body>
+        <!-- por otro lado tenemos la etiqueta de nombre <body> donde si vamos a escribir los contenidos que van a visualizarse en la ventana de vista al us
+            usuario. -->
+        <header>
+            <img src="data:image/png;base64,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"
+                alt="Texto alternativo"> <!-- podemos agregar imágenes. Esta etiqueta no tiene cierre. -->
+            <nav>
+                <!-- dentro podemos agregar una etiqueta de tipo nav que dentro podemos tener una lista desordenada -->
+                <ul> <!-- etiqueta para listas desordenadas -->
+                    <li> <a href="/inicio">INICIO</a> <!-- etiqueta para links --> </li> <!-- item de nuestra lista-->
+                    <li> <a href="/nosotros">NOSOTROS</a></li>
+                    <li> <a href="/servicios">SERVICIOS</a></li>
+                    <li> <a href="/contacto">CONTACTO</a></li>
+                </ul>
+                <h1> TITULO DE MI PAGINA </h1> <!-- también podemos agregar cabeceras a nuestras listas-->
+            </nav>
+        </header>
+        <section>
+            <!-- una section tiene más peso semántico a la hora de que un navegador pueda leer nuestro código-->
+            <h2>Titular de mi sección</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptas, unde deserunt numquam expedita
+                libero.
+                Error consequatur voluptatem sequi vitae quam, impedit consectetur, voluptate incidunt voluptatum
+                ducimus iste quasi inventore!
+            </p>
+        </section>
+        <div>
+            <h4>Encabezado de menor jerarquía</h4> <!-- podemos encabezar también tipo div -->
+            <span> Lorem ipsum dolor sit amet consectetur </span> <!-- tiene menos relevancia que una etiqueta p-->
+            <span> Lorem ipsum dolor sit amet consectetur </span>
+            <span> Lorem ipsum dolor sit amet consectetur </span>
+
+        </div>
+        <footer>
+            <!-- funciona como cierre de nuestro sitio. Puede tener un menú o textos con información institucional -->
+            <ol>
+                <li> <a href="/inicio">INICIO</a> <!-- etiqueta para links --> </li> <!-- item de nuestra lista-->
+                <li> <a href="/nosotros">NOSOTROS</a></li>
+                <li> <a href="/servicios">SERVICIOS</a></li>
+                <li> <a href="/contacto">CONTACTO</a></li>
+            </ol>
+        </footer>
+    </body>
+</hmtl>

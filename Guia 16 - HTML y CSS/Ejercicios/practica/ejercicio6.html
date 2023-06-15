@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 6</title>
+</head>
+
+<body>
+    <H1>Registrar un usuario</H1>
+    <form action="/controlador-registro" method="post">
+        <label for="nombre">Nombre de usuario</label> <br>
+        <input type="text" id="nombre" name="nombre"> <br>
+
+        <label for="contra">Contraseña del usuario</label> <br>
+        <input type="text" id="contra" name="contraseña"> <br>
+
+        <label for="edad">Edad del usuario</label> <br>
+        <input type="text" id="edad" name="edad"> <br>
+
+        <label for="fechanac">Fecha de nacimiento del usuario</label><br>
+        <input type="date" id="fechanac" name="fecha"> <br>
+
+        <label for="">Sexo del usuario</label> <br>
+        <input type="radio" id="hombre" name="sexo" value="h">
+        <label for="hombre">Hombre</label> <br>
+        <input type="radio" id="mujer" name="sexo" value="m">
+        <label for="mujer">Mujer</label> <br>
+        <input type="radio" id="otro" name="sexo" value="o">
+        <label for="otro">Prefiero no decir</label> <br>
+
+        <label for="pais">Pais de nacimiento del usuario</label><br>
+        <select name="pais">
+            <option>Argentina</option>
+            <option value="">Brasil</option>
+            <option value="">Chile</option>
+            <option value="">Uruguay</option>
+        </select><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+
+    </form>
+</body>
+
+</html>

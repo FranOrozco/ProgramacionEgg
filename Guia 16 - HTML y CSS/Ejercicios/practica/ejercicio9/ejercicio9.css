@@ -1,0 +1,43 @@
+h1 {
+    color: darkcyan;
+}
+
+p strong {
+    color: red;
+}
+
+.destacado {
+    color: darkorange;
+}
+
+h2 {
+    color: blue;
+}
+
+a {
+    color: red;
+}
+
+a em {
+    color: blue
+}
+
+p .especial {
+    color: blueviolet;
+}
+
+table {
+    border-collapse: collapse;
+} /* Esto es para que sea un borde simple como el de la imágen */
+
+thead{
+    color: darkorange;
+}
+
+tbody .especial{
+    color:darkorange;
+}
+
+tr th{
+    color: red;
+}
