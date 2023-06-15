@@ -38,6 +38,18 @@ tbody .especial{
     color:darkorange;
 }
 
-tr th{
+tbody th{
     color: red;
+}
+
+tfoot {
+    color: red;
+}
+
+tr td{
+    color: darkcyan;
+}
+
+strong{
+    color: darkorange;
 }
