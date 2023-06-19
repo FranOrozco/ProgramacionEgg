@@ -26,19 +26,17 @@ p .especial {
     color: blueviolet;
 }
 
-table {
-    border-collapse: collapse;
-} /* Esto es para que sea un borde simple como el de la imágen */
 
-thead{
+
+thead {
     color: darkorange;
 }
 
-tbody .especial{
-    color:darkorange;
+tbody .especial {
+    color: darkorange;
 }
 
-tbody th{
+tbody th {
     color: red;
 }
 
@@ -46,10 +44,26 @@ tfoot {
     color: red;
 }
 
-tr td{
+tr td {
     color: darkcyan;
 }
 
-strong{
+strong {
     color: darkorange;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#adicional {
+    color: darkkhaki;
+}
+
+#especial {
+    color: deeppink;
+}
+
+div p a {
+    color: teal;
 }
